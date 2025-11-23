@@ -12,11 +12,16 @@ export default function App() {
         setNumero(numero - 1)
     }
 
+    function zerar() {
+        setNumero(0)
+    } 
+
     return <section>
-        <h1>Contador</h1>
+        <h1>Counter<div>Hello Kitty</div></h1>
         <p>{numero}</p>
-        <button onClick={diminuir}>menos</button>
-        <button onClick={aumentar}>mais</button>
+        <button onClick={diminuir}>-1</button>
+        <button onClick={aumentar}>+1</button>
+        <div><button onClick={zerar}>Reset</button></div>
+
     </section>
 }
-
